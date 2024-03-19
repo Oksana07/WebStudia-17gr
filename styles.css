@@ -142,8 +142,6 @@ address {
 
 }
 
-
-
 .header-addres {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -177,7 +175,7 @@ address {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../web-studia/hero.png);
+    url(./web-studia/hero.png);
   background-color: #2f303a;
   background-repeat: no-repeat;
   margin-left: auto;
