@@ -265,19 +265,19 @@ address {
 }
 
 .advantages-1 {
-  background-image: url(../web-studia/antenna.jpg);
+  background-image: url(./web-studia/antenna.jpg);
 }
 
 .advantages-2 {
-  background-image: url(../web-studia/clock.png);
+  background-image: url(./web-studia/clock.png);
 }
 
 .advantages-3 {
-  background-image: url(../web-studia/diagram.png);
+  background-image: url(./web-studia/diagram.png);
 }
 
 .advantages-4 {
-  background-image: url(../web-studia/astronaut.png);
+  background-image: url(./web-studia/astronaut.png);
 }
 
 /* Чим ми займаємося */
