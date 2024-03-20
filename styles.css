@@ -124,22 +124,21 @@ address {
   color: var(--accent-color);
 }
 
-.current{
+.current {
   position: relative;
   color: var(--accent-color);
 }
 
-.current::after{
+.current::after {
   position: absolute;
   bottom: -35px;
   left: 0;
-  content: ' ';
+  content: " ";
   width: 100%;
   height: 4px;
   border-radius: 2px;
- 
-  background-color: var(--accent-color);
 
+  background-color: var(--accent-color);
 }
 
 .header-addres {
@@ -169,7 +168,6 @@ address {
   margin-right: 10px;
   fill: currentColor;
 }
-
 
 /* Герой */
 .hero {
@@ -479,7 +477,7 @@ address {
 
 /* portfolio */
 .portfolio {
-  padding-top:150px;
+  padding-top: 150px;
   padding-bottom: 94px;
 }
 
@@ -559,16 +557,16 @@ address {
 }
 
 /* overley */
-.projelt-link:hover .overley{
+.projelt-link:hover .overley {
   transform: translateY(0);
 }
 
-.overley-thumb{
+.overley-thumb {
   position: relative;
   overflow: hidden;
 }
 
-.overley{
+.overley {
   position: absolute;
   top: 0;
   left: 0;
@@ -579,17 +577,15 @@ address {
   transition: transform 250ms;
 }
 
-.overley-text{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    color: #fff;
+.overley-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
 
-    padding: 63px 24px;
-
+  padding: 63px 24px;
 }
-
 
 /* footer */
 .footer {
@@ -829,8 +825,6 @@ address {
   margin-bottom: 20px;
 }
 
-/* .form-fiel {
-} */
 
 .form-label {
   display: flex;
