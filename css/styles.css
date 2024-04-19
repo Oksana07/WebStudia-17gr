@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --accent-color: #2196f3;
   --blak-color: #000;
@@ -220,6 +219,7 @@ address {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #537896;
+  cursor: pointer;
 }
 
 .advantages {
@@ -326,7 +326,6 @@ address {
   color: #fff;
 }
 
-/* Наша команда */
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -415,7 +414,6 @@ address {
   background-color: var(--accent-color);
 }
 
-/*customers */
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -468,7 +466,6 @@ address {
   fill: var(--accent-color);
 }
 
-/* portfolio */
 .portfolio {
   padding-top: 150px;
   padding-bottom: 94px;
@@ -577,7 +574,6 @@ address {
   padding: 63px 24px;
 }
 
-/* footer */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -735,7 +731,6 @@ address {
   background-color: #64a4d8;
 }
 
-/* модільне вікно */
 .backdrop {
   position: fixed;
   top: 0;
