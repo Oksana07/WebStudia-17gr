@@ -6,18 +6,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
 }
 
-.advantages-list>.item {
+.advantages-list>.advantages-list__item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.advantages-title {
+.advantages-list__advantages-title {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.advantages-tex {
+.advantages-list__advantages-tex {
   color: var(--basic-color);
   font-size: 14px;
   font-style: normal;
@@ -25,6 +26,8 @@
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+
+
 
 /* beefore */
 .beefore {

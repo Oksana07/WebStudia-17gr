@@ -86,13 +86,11 @@ address {
   padding-bottom: 24px;
 }
 
-.logo-sryle {
+.header-logo--sryle {
   color: #000;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.logo-sryle:hover,
-.logo-sryle:focus {
+.header-logo--sryle:hover, .header-logo--sryle:focus {
   color: var(--accent-color);
 }
 
@@ -106,7 +104,7 @@ address {
   margin-right: 50px;
 }
 
-.menu-link {
+.menu-list__menu-link {
   color: var(--minor-color);
   font-size: 14px;
   font-weight: 500;
@@ -114,9 +112,7 @@ address {
   letter-spacing: 0.28px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-link:hover,
-.menu-link:focus {
+.menu-list__menu-link:hover, .menu-list__menu-link:focus {
   color: var(--accent-color);
 }
 
@@ -160,9 +156,7 @@ address {
   letter-spacing: 0.28px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-cont:hover,
-.header-cont:focus {
+.header-cont:hover, .header-cont:focus {
   color: var(--accent-color);
 }
 
@@ -230,16 +224,16 @@ address {
   gap: 30px;
 }
 
-.advantages-list > .item {
+.advantages-list > .advantages-list__item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.advantages-title {
+.advantages-list__advantages-title {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.advantages-tex {
+.advantages-list__advantages-tex {
   color: var(--basic-color);
   font-size: 14px;
   font-style: normal;
@@ -347,20 +341,18 @@ address {
   gap: 30px;
 }
 
-.team-list > .item {
+.team-list > .team-list__item {
   flex-basis: calc((100% - 90px) / 4);
   background-color: #fff;
   padding-bottom: 30px;
 }
-
-.team-list > .item:hover,
-.team-list > .item:focus {
+.team-list > .team-list__item:hover, .team-list > .team-list__item:focus {
   cursor: pointer;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.team-name {
+.team-list__team-name {
   color: var(--minor-color);
   text-align: center;
   font-size: 16px;
@@ -372,7 +364,7 @@ address {
   margin-top: 30px;
 }
 
-.team-text {
+.team-list__team-text {
   color: var(--basic-color);
   text-align: center;
   font-size: 16px;
@@ -389,12 +381,12 @@ address {
   margin-top: 16px;
 }
 
-.social-list > .item {
+.social-list > .social-list__item {
   width: 44px;
   height: 44px;
 }
 
-.social-link {
+.social-list__social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,9 +397,7 @@ address {
   background-color: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-link:hover,
-.social-link:focus {
+.social-list__social-link:hover, .social-list__social-link:focus {
   fill: #fff;
   background-color: var(--accent-color);
 }
@@ -432,8 +422,7 @@ address {
   justify-content: center;
   gap: 30px;
 }
-
-.customers-list > .item {
+.customers-list__item {
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -441,14 +430,12 @@ address {
   padding: 16px 32px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.customers-list > .item:hover,
-.customers-list > .item:focus {
+.customers-list:hover, .customers-list:focus {
   cursor: pointer;
   border-color: var(--accent-color);
 }
 
-.customers-link {
+.customers-list__customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,9 +445,7 @@ address {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.customers-svg:hover,
-.customers-svg:focus {
+.customers-svg:hover, .customers-svg:focus {
   fill: var(--accent-color);
 }
 
@@ -587,24 +572,11 @@ address {
   flex-basis: calc(50% - 15px);
 }
 
-.footer-logo {
-  color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer-logo-style {
+.footer-logo--style {
   color: #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-logo-style:hover,
-.footer-logo-style:focus {
+.footer-logo--style:hover, .footer-logo--style:focus {
   color: var(--accent-color);
 }
 
@@ -657,32 +629,12 @@ address {
   margin-bottom: 20px;
 }
 
-.social-list-foter {
-  display: flex;
+.social-list--footer {
   justify-content: start;
-  gap: 10px;
 }
 
-.social-list-foter > .item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-link-foter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  fill: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link-foter:hover,
-.social-link-foter:focus {
-  background-color: var(--accent-color);
+.social-link--foter {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 .footer-form {
