@@ -82,7 +82,7 @@
 
 // social-list footer
 .social-list--footer{
-  justify-content: start;
+ @include social-flex(start);
 }
 
 .social-link--foter{

@@ -1,0 +1,6 @@
+@mixin social-flex($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  gap: 10px;
+  margin-top: 16px;
+}
