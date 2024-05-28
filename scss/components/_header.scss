@@ -2,57 +2,83 @@
   display: flex;
   border-bottom: 1px solid #ececec;
 
-  position: fixed;
+  // position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   background-color: #fff;
 
   z-index: 100;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 }
 
-.header>.container {
+.header > .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  color: var(--accent-color);
+  // color: var(--accent-color);
+  color: $accent-color;
   font-family: $font-logo;
-  font-size: 26px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
 
-  padding-top: 25px;
-  padding-bottom: 24px;
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 
-.header-logo--sryle{
+.header-logo--sryle {
   color: #000;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-      color: var(--accent-color);
-    }
+    color: var(--accent-color);
+  }
 }
-
-
 
 .menu-list {
-  display: flex;
-  padding-left: 0px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
 
-  &__menu-item:not(:last-child) {
-      margin-right: 50px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 54px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    gap: 50px;
+  }
 }
-
-
 
 .menu-list__menu-link {
   color: var(--minor-color);
@@ -66,11 +92,9 @@
 
   &:hover,
   &:focus {
-      color: var(--accent-color);
-    }
+    color: var(--accent-color);
+  }
 }
-
-
 
 .current {
   position: relative;
@@ -98,12 +122,20 @@
 }
 
 .header-addres {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
 
-.header-cont:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .header-cont {
@@ -118,11 +150,9 @@
 
   &:hover,
   &:focus {
-      color: var(--accent-color);
-    }
+    color: var(--accent-color);
+  }
 }
-
-
 
 .header-svg {
   margin-right: 10px;
