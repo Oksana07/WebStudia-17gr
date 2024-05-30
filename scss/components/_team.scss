@@ -1,19 +1,45 @@
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-title {
   color: var(--minor-color);
   text-align: center;
-  font-size: 36px;
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
 
-  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
@@ -23,9 +49,20 @@
 }
 
 .team-list > .team-list__item {
-  flex-basis: calc((100% - 90px) / 4);
   background-color: #fff;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 
   &:hover,
   &:focus {
@@ -62,7 +99,7 @@
 
 // social
 .social-list {
-@include social-flex(center);
+  @include social-flex(center);
 }
 
 .social-list > .social-list__item {
