@@ -6,7 +6,7 @@
 
 .footer > .container {
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 480px) {
     flex-direction: column;
@@ -27,7 +27,13 @@ flex-wrap: wrap;
 }
 
 .widget-blok {
+  display: flex;
   flex-basis: calc(50% - 15px);
+
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-logo--style {
@@ -43,8 +49,11 @@ flex-wrap: wrap;
 
 .footer-list {
   padding-left: 0px;
+text-align: center;
 
-
+      @media screen and (min-width: 1200px) {
+       text-align: start;
+      }
 }
 
 .address {
@@ -59,8 +68,6 @@ flex-wrap: wrap;
   margin-bottom: 9px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    
 }
 
 .address:hover,
@@ -97,11 +104,21 @@ flex-wrap: wrap;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;
+  text-align: center;
+
+      @media screen and (min-width: 1200px) {
+      text-align: start;  
+      }
 }
 
 // social-list footer
 .social-list--footer {
-  @include social-flex(start);
+  @include social-flex(center);
+  margin-top: 0px;
+      @media screen and (min-width: 1200px) {
+        @include social-flex(start);
+
+      }
 }
 
 .social-link--foter {
@@ -109,8 +126,13 @@ flex-wrap: wrap;
 }
 
 .footer-form {
-  display: flex;
-  gap: 12px;
+    @media screen and (min-width: 480px) {
+      display: ruby;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+          gap: 12px;
+      }
 }
 
 .footer-form-input {
@@ -118,13 +140,25 @@ flex-wrap: wrap;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
+  
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: rgba(33, 150, 243, 0);
   padding: 15px 16px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+    }
+ 
+    @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0px;
+    }
 }
+
+
 
 .footer-form-input:focus-within {
   border-color: #64a4d8;
