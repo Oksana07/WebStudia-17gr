@@ -45,8 +45,23 @@
                     </svg>
                     +38 096 111 11 11</a>
             </address>
+            <!--  button mobile-->
+            <button class="button-mobile" data-menu-button>
+                <svg class="icon-mobile" aria-label="Переключатель меню">
+                    <use class="icon-menu" href="./web-studia/symbol-defs.svg#icon-menu"></use>
+                    <use class="icon-close" href="./web-studia/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
         </div>
     </header>
+    <!-- mobile menu -->
+    <div class="mobile-menu" data-menu>
+        <ul class="mobile-list-menu">
+            <li class="item"><a href="./index.html" class="mobile-link">Студія</a></li>
+            <li class="item"><a href="" class="mobile-link">Портфоліо</a></li>
+            <li class="item"><a href="" class="mobile-link">Контакти</a></li>
+        </ul>
+    </div>
 
     <main>
         <section class="portfolio">
@@ -323,6 +338,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 
 </html>
