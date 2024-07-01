@@ -319,35 +319,56 @@ address {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../web-studia/hero.png);
   background-color: #2f303a;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../web-studia/mobile/hero@2x-mobile.png);
 }
+
 @media screen and (min-width: 480px) {
   .hero {
-    max-width: 480px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../web-studia/tablet/hero@1x-tablet.png);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../web-studia/tablet/hero@1x-tablet.png);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    padding-top: 128px;
-    padding-bottom: 128px;
+    max-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../web-studia/tablet/hero@1x-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../web-studia/tablet/hero@1x-tablet.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../web-studia/hero.png);
   }
 }
-
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../web-studia/decktop/hero@2x-decktop.png);
+  }
+}
 .hero__hero-title {
   color: #fff;
   text-align: center;
@@ -780,15 +801,36 @@ address {
   fill: var(--accent-color);
 }
 
-.portfolio {
-  padding-top: 150px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-list {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-list > .item:not(:first-child) {
@@ -820,11 +862,37 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .projelt-list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projelt-list {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projelt-list {
+    justify-content: center;
+  }
 }
 
-.projelt-list > .item {
-  flex-basis: calc((100% - 60px) / 3);
+@media screen and (min-width: 480px) {
+  .projelt-list > .item {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .projelt-list > .item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projelt-list > .item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .projelt-box {

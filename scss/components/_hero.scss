@@ -1,54 +1,82 @@
 .hero {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../web-studia/hero.png);
   background-color: #2f303a;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  max-width: 1600px;
+ 
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../web-studia/mobile/hero@2x-mobile.png);
+}
 
-  // @media (max-width: 480px) {
-  //   width: 100%;
-  //   padding-top: 118px;
-  //   padding-bottom: 118px;
-  // }
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../web-studia/tablet/hero@1x-tablet.png);
+  }
+}
 
-  // @media (min-width: 481px) and (max-width: 768px) {
-  //   width: 100%;
-  //   padding-top: 124px;
-  //   padding-bottom: 124px;
-  // }
-
-  // @media (min-width: 769px) and (max-width: 1200px) {
-  //   width: 100%;
-  //   padding-top: 200px;
-  //   padding-bottom: 200px;
-  // }
-
-  // @media (min-width: 1201px) {
-  //   padding-top: 200px;
-  //   padding-bottom: 200px;
-  // }
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 480px) and (min-resolution: 192dpi),
+screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../web-studia/tablet/hero@1x-tablet.png);
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .hero {
     max-width: 768px;
-    padding-top: 128px;
-    padding-bottom: 128px;
+    max-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../web-studia/tablet/hero@1x-tablet.png);
   }
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../web-studia/tablet/hero@1x-tablet.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-position: center;
+    background-size: cover;
+  
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../web-studia/hero.png);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../web-studia/decktop/hero@2x-decktop.png);
   }
 }
 
@@ -62,30 +90,6 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-
-  // @media (max-width: 480px) {
-  //   width: 280px;
-  //   font-size: 26px;
-  //   margin-bottom: 30px;
-  // }
-
-  // @media (min-width: 481px) and (max-width: 768px) {
-  //   width: 387px;
-  //   font-size: 26px;
-  //   margin-bottom: 30px;
-  // }
-
-  // @media (min-width: 769px) and (max-width: 1200px) {
-  //   width: 696px;
-  //   font-size: 22px;
-  //   margin-bottom: 37px;
-  // }
-
-  // @media (min-width: 1201px) {
-  //   width: 696px;
-  //   font-size: 44px;
-  //   margin-bottom: 30px;
-  // }
 
   @media screen and (min-width: 480px) {
     width: 360px;

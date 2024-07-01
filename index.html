@@ -148,7 +148,20 @@
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
-                    <li class="team-list__item"><img src="./web-studia/igor-desktop.jpg" alt="" width="270">
+                    <li class="team-list__item">
+                        <picture>
+                            <source
+                                srcset="./web-studia/mobile/igor@1x-mobile.jpg 1x, ./web-studia/mobile/igor@2x-mobile.jpg 2x"
+                                media="(max-width:480px)" type="image/webp">
+                            <source
+                                srcset="./web-studia/tablet/igor@1x-tablet.jpg 1x, ./web-studia/tablet/igor@2x-tablet.jpg 2x"
+                                media="(max-width:768px)" type="image/webp">
+                            <source
+                                srcset="./web-studia/igor-desktop.jpg 1x, ./web-studia/decktop/igor-desktop@2x-decktop.jpg 2x"
+                                media="(max-width:1200px)" type="image/webp">
+                            <img src="./web-studia/igor-desktop.jpg" alt="Ігор Дем'яненко Product Designer" width="450">
+                        </picture>
+
                         <h3 class="team-list__team-name">Ігор Дем'яненко</h3>
                         <p class="team-list__team-text">Product Designer</p>
 

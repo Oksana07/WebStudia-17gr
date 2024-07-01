@@ -1,15 +1,32 @@
 .portfolio {
-  padding-top: 150px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+    gap: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
-.portfolio-list>.item:not(:first-child) {
+.portfolio-list > .item:not(:first-child) {
   margin-left: 8px;
 }
 
@@ -44,11 +61,32 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
-.projelt-list>.item {
-  flex-basis: calc((100% - 60px) / 3);
+.projelt-list > .item {
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .projelt-box {
